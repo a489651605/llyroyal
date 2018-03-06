@@ -110,8 +110,7 @@
 																					</span></p>
 																				{/if}
 																			{/if}-->
-
-                                                                                                                                                        <p>服务器地址：{$ssr_item['address']}</p>
+																			
 																			<p>备注：{$node->info}</p>
 																			
 																				 	
@@ -322,8 +321,7 @@
 																					</span></p>
 																				{/if}
 																			{/if}-->
-
-                                                                                                                                                        <p>服务器地址：{$ssr_item['address']}</p>
+																			
 																			<p>备注：{$node->info}</p> 
 																			
 																				 	
