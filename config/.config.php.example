@@ -16,7 +16,7 @@ $System_Config['sessionDriver'] = 'cookie';
 $System_Config['cacheDriver'] = 'cookie';
 $System_Config['tokenDriver'] = 'db';
 
-//['version'] = '<a href=""></a> mod-2016042210000';
+//$System_Config['version'] = '<a href="https://www.zhaoj.in">Glzjin</a> mod-2016042210000';
 
 // mu key 用于校验ss-go mu的请求,半角逗号分隔
 $System_Config['muKey'] = '';
@@ -36,9 +36,9 @@ $System_Config['inviteNum'] = '0';
 # database 数据库配置
 $System_Config['db_driver'] = 'mysql';
 $System_Config['db_host'] = 'localhost';
-$System_Config['db_database'] = '';
-$System_Config['db_username'] = '';
-$System_Config['db_password'] = '';
+$System_Config['db_database'] = 'sspanel';
+$System_Config['db_username'] = 'sspanel';
+$System_Config['db_password'] = 'root';
 $System_Config['db_charset'] = 'utf8';
 $System_Config['db_collation'] = 'utf8_general_ci';
 $System_Config['db_prefix'] = '';
@@ -62,7 +62,7 @@ $System_Config['smtp_port'] = '';
 $System_Config['smtp_name'] = '';
 $System_Config['smtp_sender'] = '';
 $System_Config['smtp_passsword'] = '';
-$System_Config['smtp_ssl'] = '';
+$System_Config['smtp_ssl'] = 'false';
 
 # aws
 $System_Config['aws_access_key_id'] = '';
@@ -76,7 +76,7 @@ $System_Config['enable_wecenter']='false';
 $System_Config['enable_radius']='false';
 $System_Config['enable_cloudxns']='false';
 $System_Config['enable_duoshuo']='false';
-$System_Config['enable_rss']='true';
+$System_Config['enable_rss']='ture';
 $System_Config['enable_paymentwall']='false';
 
 
@@ -191,7 +191,7 @@ $System_Config['email_verify_iplimit']='10';
 
 
 #注册时默认加密方式
-$System_Config['reg_method']='rc4-md5';
+$System_Config['reg_method']='aes-256-cfb';
 
 #注册时默认协议
 $System_Config['reg_protocol']='auth_sha1_v4_compatible';
@@ -232,7 +232,7 @@ $System_Config['enable_account_expire_reset_traffic']='0';
 $System_Config['enable_bought_reset']='false';
 
 #账户到期之后是否会删除账户
-$System_Config['enable_account_expire_delete']='true';
+$System_Config['enable_account_expire_delete']='false';
 
 #账户到期几天之后会删除账户
 $System_Config['enable_account_expire_delete_days']='35';
@@ -242,7 +242,7 @@ $System_Config['geetest_id']='';
 $System_Config['geetest_key']='';
 
 #启用注册验证码
-$System_Config['enable_geetest_reg']='true';
+$System_Config['enable_geetest_reg']='false';
 
 #启用登录验证码
 $System_Config['enable_geetest_login']='false';
@@ -256,7 +256,7 @@ $System_Config['enable_auto_clean_uncheck_days']='7';
 
 
 #自动清理多少天没使用的0级用户
-$System_Config['enable_auto_clean_unused']='true';
+$System_Config['enable_auto_clean_unused']='false';
 $System_Config['enable_auto_clean_unused_days']='90';
 
 
@@ -268,7 +268,7 @@ $System_Config['enable_alipay']='true';
 $System_Config['enable_donate']='true';
 
 #telegram bot,是否启用
-$System_Config['enable_telegram']='true';
+$System_Config['enable_telegram']='false';
 
 #telegram bot,bot 的 token ，跟 father bot 申请
 $System_Config['telegram_token']='383780191:AAHd5dRffO3nX1B2f7AmcW3GuhL1SoDlNLY';
@@ -363,7 +363,7 @@ $System_Config['zfbjk_key']='';
 $System_Config['zfbjk_qrcodeurl']='https://www.zhaojin97.cn/wp-content/uploads/2016/01/630c50ab52bc139b2a33af8cc64e47ad2016010111570425541.jpg';
 
 #不安全中转模式，这个开启之后使用除了 auth_aes128_md5 或者 auth_aes128_sha1 以外的协议地用户也可以设置和使用中转，但是，强烈推荐不开启。
-$System_Config['relay_insecure_mode']='true';
+$System_Config['relay_insecure_mode']='false';
 
 #在套了CDN之后获取用户真实ip，如果您不知道这是什么，请不要乱动
 
